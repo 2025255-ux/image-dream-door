@@ -72,11 +72,11 @@ function Login() {
               <form onSubmit={onSubmit} className="space-y-5">
                 <div className="space-y-2">
                   <label htmlFor="food" className="text-sm font-medium text-foreground">メールアドレス</label>
-                  <input id="food" value={food} onChange={(e) => setFood(e.target.value)} placeholder="れい：カレー" className="field" />
+                  <input id="food" value={food} onChange={(e) => setFood(e.target.value)} className="field" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="color" className="text-sm font-medium text-foreground">パスワード</label>
-                  <input id="color" value={color} onChange={(e) => setColor(e.target.value)} placeholder="れい：あお" className="field" />
+                  <input id="color" value={color} onChange={(e) => setColor(e.target.value)} className="field" />
                 </div>
                 {error && <p className="text-sm text-destructive">{error}</p>}
                 <button type="submit" disabled={loading} className="w-full rounded-full bg-primary py-3 text-sm font-medium text-primary-foreground transition hover:opacity-90 active:scale-95 disabled:opacity-60">
