@@ -29,7 +29,7 @@ function Index() {
         </p>
       </main>
       <footer className="flex justify-end px-8 py-10 md:px-16">
-        <Link to="/login" className="pill-button">みるには →</Link>
+        <Link to="/login" className="pill-button">見るには →</Link>
       </footer>
     </DailyScene>
   );
