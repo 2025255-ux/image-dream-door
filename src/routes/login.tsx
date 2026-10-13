@@ -71,11 +71,11 @@ function Login() {
               <p className="mb-8 text-sm text-muted-foreground">つづきを見るには、こたえてね</p>
               <form onSubmit={onSubmit} className="space-y-5">
                 <div className="space-y-2">
-                  <label htmlFor="food" className="text-sm font-medium text-foreground">すきな食べもの</label>
+                  <label htmlFor="food" className="text-sm font-medium text-foreground">メールアドレス</label>
                   <input id="food" value={food} onChange={(e) => setFood(e.target.value)} placeholder="れい：カレー" className="field" />
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="color" className="text-sm font-medium text-foreground">すきな色</label>
+                  <label htmlFor="color" className="text-sm font-medium text-foreground">パスワード</label>
                   <input id="color" value={color} onChange={(e) => setColor(e.target.value)} placeholder="れい：あお" className="field" />
                 </div>
                 {error && <p className="text-sm text-destructive">{error}</p>}
